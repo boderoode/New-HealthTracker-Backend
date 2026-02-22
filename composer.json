@@ -4,17 +4,28 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.4",
+        "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "symfony/console": "8.0.*",
-        "symfony/dotenv": "8.0.*",
+        "api-platform/core": "^3.4.17",
+        "doctrine/doctrine-bundle": "^2.13",
+        "doctrine/doctrine-migrations-bundle": "^3.3",
+        "doctrine/orm": "^3.3",
+        "lexik/jwt-authentication-bundle": "^3.1",
+        "nelmio/cors-bundle": "^2.5",
+        "symfony/asset": "7.2.*",
+        "symfony/console": "7.2.*",
+        "symfony/dotenv": "7.2.*",
+        "symfony/expression-language": "7.2.*",
         "symfony/flex": "^2",
-        "symfony/framework-bundle": "8.0.*",
-        "symfony/runtime": "8.0.*",
-        "symfony/yaml": "8.0.*"
-    },
-    "require-dev": {
+        "symfony/framework-bundle": "7.2.*",
+        "symfony/password-hasher": "7.2.*",
+        "symfony/runtime": "7.2.*",
+        "symfony/security-bundle": "7.2.*",
+        "symfony/serializer": "7.2.*",
+        "symfony/twig-bundle": "7.2.*",
+        "symfony/validator": "7.2.*",
+        "symfony/yaml": "7.2.*"
     },
     "config": {
         "allow-plugins": {
@@ -22,7 +33,6 @@
             "symfony/flex": true,
             "symfony/runtime": true
         },
-        "bump-after-update": true,
         "sort-packages": true
     },
     "autoload": {
@@ -65,7 +75,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "8.0.*"
+            "require": "7.2.*"
         }
     }
 }
